@@ -23,8 +23,7 @@ class MainPage(wx.Frame):
         l2 = wx.StaticText(panel, -1, "How many times should I spam them? ") 
             
         hbox2.Add(l2, 1, wx.ALIGN_LEFT|wx.ALL,5) 
-        self.t2 = wx.TextCtrl(panel,style = wx.TE_PASSWORD) 
-        self.t2.SetMaxLength(5) 
+        self.t2 = wx.TextCtrl(panel)
             
         hbox2.Add(self.t2,1,wx.EXPAND|wx.ALIGN_LEFT|wx.ALL,5) 
         vbox.Add(hbox2) 
